@@ -1,0 +1,28 @@
+2022-12-01 00:56:46,087 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2022-12-01 00:56:46,090 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2022-12-01 00:56:46,200 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2022-12-01 00:56:46,200 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2022-12-01 00:56:46,203 - INFO test_customer_add.py [line:15]: 新增会员成功的用例数据为[['customer_add_nor001', '新增会员成功', '于嘉川', '13292679673', '男', '1993-10-20', '0', '0', 'success']]
+2022-12-01 00:56:46,206 - INFO test_customer_add.py [line:19]: class setup content
+2022-12-01 00:56:46,206 - INFO test_customer_add.py [line:26]: function setup content
+2022-12-01 00:56:46,206 - INFO getSession.py [line:32]: 非登录类测试用例需先进行登录操作
+2022-12-01 00:56:46,523 - INFO getSession.py [line:43]: 登录用户为[admin]
+2022-12-01 00:56:46,524 - INFO test_customer_add.py [line:35]: 用例名customer_add_nor001,用例描述新增会员成功
+2022-12-01 00:56:46,524 - INFO rest_client.py [line:50]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/customer/add
+2022-12-01 00:56:46,524 - INFO rest_client.py [line:51]: 接口请求方式 ==>> post
+2022-12-01 00:56:46,524 - INFO rest_client.py [line:52]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2022-12-01 00:56:46,524 - INFO rest_client.py [line:53]: 接口请求 params 参数 ==>> null
+2022-12-01 00:56:46,524 - INFO rest_client.py [line:54]: 接口上传附件 files 参数 ==>> None
+2022-12-01 00:56:46,524 - INFO rest_client.py [line:55]: 接口请求体 data 参数 ==>> {
+    "customername": "于嘉川",
+    "customerphone": "13292679673",
+    "childsex": "男",
+    "childdate": "1993-10-20",
+    "creditkids": "0",
+    "creditcloth": "0"
+}
+2022-12-01 00:56:46,575 - INFO customerApi.py [line:22]: 用户登录 ==>> 返回结果为:<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Error</h1></center><hr><center><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>
+2022-12-01 00:56:46,576 - INFO test_customer_add.py [line:30]: function teardown content
+2022-12-01 00:56:46,640 - INFO test_customer_add.py [line:23]: Class teardown content

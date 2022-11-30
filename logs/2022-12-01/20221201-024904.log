@@ -1,0 +1,126 @@
+2022-12-01 02:49:04,043 - INFO run.py [line:34]: RunCase执行用例--开始
+2022-12-01 02:49:04,060 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2022-12-01 02:49:04,063 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2022-12-01 02:49:04,064 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2022-12-01 02:49:04,064 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2022-12-01 02:49:04,074 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2022-12-01 02:49:04,075 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2022-12-01 02:49:04,179 - INFO test_customer_add.py [line:16]: 新增会员成功的用例数据为[['customer_add_nor001', '新增会员成功', 'yujia1', '13292679674', '男', '1993-10-20', '0', '0', 'success'], ['customer_add_nor002', '新增会员成功', 'yujia2', '13292679675', '男', '1993-10-21', '1', '1', 'success'], ['customer_add_nor003', '新增会员成功', 'yujia3', '13292679676', '男', '1993-10-22', '2', '2', 'success'], ['customer_add_nor004', '新增会员成功', 'yujia4', '13292679677', '男', '1993-10-23', '3', '3', 'success']]
+2022-12-01 02:49:04,183 - INFO test_login.py [line:16]: 登录类测试用例数据为[['login_nor001', '登录成功', 'admin', '123456', '0000', 'pass'], ['login_nor002', '登录成功', 'lm', 'lmlm123', '0000', 'pass']]
+2022-12-01 02:49:04,183 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2022-12-01 02:49:04,184 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2022-12-01 02:49:04,199 - INFO test_customer_add.py [line:20]: class setup content
+2022-12-01 02:49:04,199 - INFO test_customer_add.py [line:27]: function setup content
+2022-12-01 02:49:04,199 - INFO getSession.py [line:33]: 非登录类测试用例需先进行登录操作
+2022-12-01 02:49:04,659 - INFO getSession.py [line:45]: 登录用户为[admin]
+2022-12-01 02:49:04,660 - INFO test_customer_add.py [line:39]: 用例名customer_add_nor001,用例描述新增会员成功
+2022-12-01 02:49:04,660 - INFO rest_client.py [line:51]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/customer/add
+2022-12-01 02:49:04,660 - INFO rest_client.py [line:52]: 接口请求方式 ==>> post
+2022-12-01 02:49:04,660 - INFO rest_client.py [line:53]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2022-12-01 02:49:04,660 - INFO rest_client.py [line:54]: 接口请求 params 参数 ==>> null
+2022-12-01 02:49:04,660 - INFO rest_client.py [line:55]: 接口上传附件 files 参数 ==>> None
+2022-12-01 02:49:04,660 - INFO rest_client.py [line:56]: 接口请求体 data 参数 ==>> {
+    "customername": "yujia1",
+    "customerphone": "13292679674",
+    "childsex": "男",
+    "childdate": "1993-10-20",
+    "creditkids": "0",
+    "creditcloth": "0"
+}
+2022-12-01 02:49:04,680 - INFO customerApi.py [line:22]: 用户登录 ==>> 返回结果为:<Response [200]>
+2022-12-01 02:49:04,680 - INFO test_customer_add.py [line:31]: function teardown content
+2022-12-01 02:49:05,082 - INFO test_customer_add.py [line:27]: function setup content
+2022-12-01 02:49:05,082 - INFO test_customer_add.py [line:39]: 用例名customer_add_nor002,用例描述新增会员成功
+2022-12-01 02:49:05,082 - INFO rest_client.py [line:51]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/customer/add
+2022-12-01 02:49:05,083 - INFO rest_client.py [line:52]: 接口请求方式 ==>> post
+2022-12-01 02:49:05,083 - INFO rest_client.py [line:53]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2022-12-01 02:49:05,083 - INFO rest_client.py [line:54]: 接口请求 params 参数 ==>> null
+2022-12-01 02:49:05,083 - INFO rest_client.py [line:55]: 接口上传附件 files 参数 ==>> None
+2022-12-01 02:49:05,084 - INFO rest_client.py [line:56]: 接口请求体 data 参数 ==>> {
+    "customername": "yujia2",
+    "customerphone": "13292679675",
+    "childsex": "男",
+    "childdate": "1993-10-21",
+    "creditkids": "1",
+    "creditcloth": "1"
+}
+2022-12-01 02:49:05,133 - INFO customerApi.py [line:22]: 用户登录 ==>> 返回结果为:<Response [200]>
+2022-12-01 02:49:05,133 - INFO test_customer_add.py [line:31]: function teardown content
+2022-12-01 02:49:05,529 - INFO test_customer_add.py [line:27]: function setup content
+2022-12-01 02:49:05,529 - INFO test_customer_add.py [line:39]: 用例名customer_add_nor003,用例描述新增会员成功
+2022-12-01 02:49:05,529 - INFO rest_client.py [line:51]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/customer/add
+2022-12-01 02:49:05,529 - INFO rest_client.py [line:52]: 接口请求方式 ==>> post
+2022-12-01 02:49:05,529 - INFO rest_client.py [line:53]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2022-12-01 02:49:05,529 - INFO rest_client.py [line:54]: 接口请求 params 参数 ==>> null
+2022-12-01 02:49:05,530 - INFO rest_client.py [line:55]: 接口上传附件 files 参数 ==>> None
+2022-12-01 02:49:05,530 - INFO rest_client.py [line:56]: 接口请求体 data 参数 ==>> {
+    "customername": "yujia3",
+    "customerphone": "13292679676",
+    "childsex": "男",
+    "childdate": "1993-10-22",
+    "creditkids": "2",
+    "creditcloth": "2"
+}
+2022-12-01 02:49:05,551 - INFO customerApi.py [line:22]: 用户登录 ==>> 返回结果为:<Response [200]>
+2022-12-01 02:49:05,551 - INFO test_customer_add.py [line:31]: function teardown content
+2022-12-01 02:49:05,776 - INFO test_customer_add.py [line:27]: function setup content
+2022-12-01 02:49:05,776 - INFO test_customer_add.py [line:39]: 用例名customer_add_nor004,用例描述新增会员成功
+2022-12-01 02:49:05,776 - INFO rest_client.py [line:51]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/customer/add
+2022-12-01 02:49:05,776 - INFO rest_client.py [line:52]: 接口请求方式 ==>> post
+2022-12-01 02:49:05,776 - INFO rest_client.py [line:53]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2022-12-01 02:49:05,776 - INFO rest_client.py [line:54]: 接口请求 params 参数 ==>> null
+2022-12-01 02:49:05,776 - INFO rest_client.py [line:55]: 接口上传附件 files 参数 ==>> None
+2022-12-01 02:49:05,776 - INFO rest_client.py [line:56]: 接口请求体 data 参数 ==>> {
+    "customername": "yujia4",
+    "customerphone": "13292679677",
+    "childsex": "男",
+    "childdate": "1993-10-23",
+    "creditkids": "3",
+    "creditcloth": "3"
+}
+2022-12-01 02:49:05,888 - INFO customerApi.py [line:22]: 用户登录 ==>> 返回结果为:<Response [200]>
+2022-12-01 02:49:05,888 - INFO test_customer_add.py [line:31]: function teardown content
+2022-12-01 02:49:06,166 - INFO test_customer_add.py [line:24]: Class teardown content
+2022-12-01 02:49:06,166 - INFO test_login.py [line:23]: class setup content
+2022-12-01 02:49:06,166 - INFO test_login.py [line:30]: function setup content
+2022-12-01 02:49:06,166 - INFO test_login.py [line:39]: 用例名login_nor001,用例描述登录成功
+2022-12-01 02:49:06,166 - INFO rest_client.py [line:51]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/user/login
+2022-12-01 02:49:06,167 - INFO rest_client.py [line:52]: 接口请求方式 ==>> post
+2022-12-01 02:49:06,167 - INFO rest_client.py [line:53]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2022-12-01 02:49:06,167 - INFO rest_client.py [line:54]: 接口请求 params 参数 ==>> null
+2022-12-01 02:49:06,167 - INFO rest_client.py [line:55]: 接口上传附件 files 参数 ==>> None
+2022-12-01 02:49:06,167 - INFO rest_client.py [line:56]: 接口请求体 data 参数 ==>> {
+    "username": "admin",
+    "password": "123456",
+    "verifycode": "0000"
+}
+2022-12-01 02:49:06,188 - INFO loginApi.py [line:19]: 用户登录 ==>> 返回结果为:login-pass
+2022-12-01 02:49:06,188 - INFO test_login.py [line:34]: function teardown content
+2022-12-01 02:49:06,188 - INFO test_login.py [line:30]: function setup content
+2022-12-01 02:49:06,188 - INFO test_login.py [line:39]: 用例名login_nor002,用例描述登录成功
+2022-12-01 02:49:06,189 - INFO rest_client.py [line:51]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/user/login
+2022-12-01 02:49:06,189 - INFO rest_client.py [line:52]: 接口请求方式 ==>> post
+2022-12-01 02:49:06,189 - INFO rest_client.py [line:53]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2022-12-01 02:49:06,189 - INFO rest_client.py [line:54]: 接口请求 params 参数 ==>> null
+2022-12-01 02:49:06,189 - INFO rest_client.py [line:55]: 接口上传附件 files 参数 ==>> None
+2022-12-01 02:49:06,189 - INFO rest_client.py [line:56]: 接口请求体 data 参数 ==>> {
+    "username": "lm",
+    "password": "lmlm123",
+    "verifycode": "0000"
+}
+2022-12-01 02:49:06,210 - INFO loginApi.py [line:19]: 用户登录 ==>> 返回结果为:login-pass
+2022-12-01 02:49:06,210 - INFO test_login.py [line:34]: function teardown content
+2022-12-01 02:49:06,210 - INFO test_login.py [line:27]: Class teardown content
+2022-12-01 02:49:06,233 - INFO run.py [line:47]: RunCase执行用例--结束

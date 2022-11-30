@@ -1,0 +1,2 @@
+2022-12-01 02:42:23,029 - INFO run.py [line:34]: RunCase执行用例--开始
+2022-12-01 02:42:23,029 - ERROR run.py [line:49]: RunCase执行用例，生成报告失败：Start directory is not importable: '../case'

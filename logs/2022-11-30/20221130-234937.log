@@ -1,0 +1,37 @@
+2022-11-30 23:49:37,909 - INFO test_login.py [line:16]: 登录类测试用例数据为[['login_nor001', '登录成功', 'admin', '123456', '0000', 'pass'], ['login_nor002', '登录成功', 'lm', 'lmlm123', '0000', 'pass']]
+2022-11-30 23:49:37,910 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2022-11-30 23:49:37,913 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2022-11-30 23:49:37,915 - INFO test_login.py [line:23]: class setup content
+2022-11-30 23:49:37,915 - INFO test_login.py [line:30]: function setup content
+2022-11-30 23:49:37,915 - INFO test_login.py [line:39]: 用例名login_nor001,用例描述登录成功
+2022-11-30 23:49:37,915 - INFO rest_client.py [line:47]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/user/login
+2022-11-30 23:49:37,915 - INFO rest_client.py [line:48]: 接口请求方式 ==>> post
+2022-11-30 23:49:37,916 - INFO rest_client.py [line:49]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2022-11-30 23:49:37,916 - INFO rest_client.py [line:50]: 接口请求 params 参数 ==>> null
+2022-11-30 23:49:37,916 - INFO rest_client.py [line:51]: 接口上传附件 files 参数 ==>> None
+2022-11-30 23:49:37,916 - INFO rest_client.py [line:52]: 接口请求体 data 参数 ==>> {
+    "username": "admin",
+    "password": "123456",
+    "verifycode": "0000"
+}
+2022-11-30 23:49:38,107 - INFO loginApi.py [line:19]: 用户登录 ==>> 返回结果为:login-pass
+2022-11-30 23:49:38,107 - INFO test_login.py [line:34]: function teardown content
+2022-11-30 23:49:38,109 - INFO test_login.py [line:30]: function setup content
+2022-11-30 23:49:38,109 - INFO test_login.py [line:39]: 用例名login_nor002,用例描述登录成功
+2022-11-30 23:49:38,109 - INFO rest_client.py [line:47]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/user/login
+2022-11-30 23:49:38,109 - INFO rest_client.py [line:48]: 接口请求方式 ==>> post
+2022-11-30 23:49:38,109 - INFO rest_client.py [line:49]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2022-11-30 23:49:38,109 - INFO rest_client.py [line:50]: 接口请求 params 参数 ==>> null
+2022-11-30 23:49:38,109 - INFO rest_client.py [line:51]: 接口上传附件 files 参数 ==>> None
+2022-11-30 23:49:38,109 - INFO rest_client.py [line:52]: 接口请求体 data 参数 ==>> {
+    "username": "lm",
+    "password": "lmlm123",
+    "verifycode": "0000"
+}
+2022-11-30 23:49:38,303 - INFO loginApi.py [line:19]: 用户登录 ==>> 返回结果为:login-pass
+2022-11-30 23:49:38,304 - INFO test_login.py [line:34]: function teardown content
+2022-11-30 23:49:38,306 - INFO test_login.py [line:27]: Class teardown content

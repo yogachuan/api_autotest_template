@@ -1,0 +1,3 @@
+2022-12-01 02:34:09,680 - INFO run.py [line:34]: RunCase执行用例--开始
+2022-12-01 02:37:40,168 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/config/setting.yml 文件......
+2022-12-01 02:37:40,199 - INFO run.py [line:37]: RunCase执行用例--结束

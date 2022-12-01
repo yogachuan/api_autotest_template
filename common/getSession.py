@@ -9,7 +9,7 @@ class GetSessionID:
     # 创建一个静态属性
     ses = None
     base_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    print(base_path)
+    # print(base_path)
     file_data = read_data.load_yaml(os.path.join(base_path, 'config', 'setting.yml'))['host']
     api_root_url = file_data["api_root_url"]
     api_content_type = file_data["api_content_type"]
@@ -22,10 +22,6 @@ class GetSessionID:
             if case == 'notLogin':
                 # 非登录类用例需先执行登录操作
                 GetSessionID.login()
-            else:
-                # 登录类用例
-                pass
-
         return cls.ses
 
     @classmethod

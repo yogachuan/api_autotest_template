@@ -26,6 +26,7 @@ class CustomerAddTest(unittest.TestCase):
     def setUp(self) -> None:
         logger.info("function setup content")
         self.ses = GetSessionID.sessionMethod()
+        self.customer_api = CustomerApi(self.ses)
 
     def tearDown(self) -> None:
         logger.info("function teardown content")
@@ -37,7 +38,7 @@ class CustomerAddTest(unittest.TestCase):
     @unpack
     def test_customer_add_success(self, case, desc, name, phone, sex, birthday, creditkids, creditcloth, ass):
         logger.info(f'用例名{case},用例描述{desc}')
-        res = CustomerApi(self.ses).add_customer_success(name, phone, sex, birthday, creditkids, creditcloth)
+        res = self.customer_api.add_customer_success(name, phone, sex, birthday, creditkids, creditcloth)
         print(res)
         self.assertIn(ass, res.text)
 

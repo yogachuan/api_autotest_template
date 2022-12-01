@@ -6,9 +6,9 @@ import os
 
 
 class RestClient:
-    basepath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    print(basepath)
-    file_data = read_data.load_yaml(os.path.join(basepath, 'config', 'setting.yml'))['host']
+    base_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    # print(basepath)
+    file_data = read_data.load_yaml(os.path.join(base_path, 'config', 'setting.yml'))['host']
     api_root_url = file_data["api_root_url"]
     api_content_type = file_data["api_content_type"]
 

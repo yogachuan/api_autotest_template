@@ -46,5 +46,5 @@ class CustomerAddTest(unittest.TestCase):
 if __name__ == '__main__':
     suite = unittest.TestSuite()
     suite.addTest(CustomerAddTest())
-    runner = unittest.TextTestRunner
+    runner = unittest.TextTestRunner()
     test_result = runner.run(suite)

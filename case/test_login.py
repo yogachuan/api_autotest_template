@@ -44,5 +44,5 @@ class LoginTest(unittest.TestCase):
 if __name__ == '__main__':
     suite = unittest.TestSuite()
     suite.addTest(LoginTest())
-    runner = unittest.TextTestRunner
+    runner = unittest.TextTestRunner()
     test_result = runner.run(suite)

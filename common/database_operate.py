@@ -59,6 +59,7 @@ class MysqlDb:
             self.cur.execute(sql)
             # 提交事务
             self.conn.commit()
+            logger.info(f"操作SQL语句成功[{sql}]")
         except Exception as e:
             logger.info("操作MySQL出现错误，错误原因：{}".format(e))
             # 回滚所有更改

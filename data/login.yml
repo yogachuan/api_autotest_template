@@ -1,0 +1,28 @@
+login_nor_data:
+  - case_name: "login_nor001"
+    case_desc: "用户admin登录成功"
+    payload: {
+      username: "admin",
+      password: "123456",
+      verifycode: '0000'
+    }
+    expect_msg: "pass"
+
+  - case_name: "login_nor002"
+    case_desc: "用户lm登录成功"
+    payload: {
+      username: "lm",
+      password: "lmlm123",
+      verifycode: '0000'
+    }
+    expect_msg: "pass"
+
+login_abn_data:
+  - case_name: "login_abn001"
+    case_desc: "用户admin登录失败"
+    payload: {
+      username: "admin",
+      password: "lmlm123",
+      verifycode: '0000'
+    }
+    expect_msg: "fail"

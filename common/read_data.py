@@ -22,7 +22,7 @@ class ReadFileData:
     @staticmethod
     def load_yaml(file_path):
         logger.info("加载 {} 文件......".format(file_path))
-        with open(file_path, encoding='gbk') as f:
+        with open(file_path, encoding='UTF-8') as f:
             data = yaml.safe_load(f)
         logger.info("读到数据 ==>>  {} ".format(data))
         return data

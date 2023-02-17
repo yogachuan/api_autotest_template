@@ -12,8 +12,8 @@ from ddt import ddt, data, unpack
 class LoginTest(unittest.TestCase):
     """登录类测试"""
     base_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    case_data = read_data.load_excel(os.path.join(base_path, 'data', 'login_nor.xlsx'))
-    logger.info(f'登录类测试用例数据为{case_data}')
+    case_data = read_data.load_yaml(os.path.join(base_path, 'data', 'login.yml'))
+    logger.info(f'登录类测试用例数据为{case_data["login_nor_data"]}')
 
     @classmethod
     def setUpClass(cls) -> None:
@@ -31,14 +31,14 @@ class LoginTest(unittest.TestCase):
     def tearDown(self) -> None:
         logger.info("function teardown content")
 
-    @data(*case_data)
+    @data(*case_data["login_nor_data"])
     @unpack
-    def test_login_success(self, case, desc, usr, pwd, code, ass):
-        logger.info(f'用例名{case},用例描述{desc}')
-        res = self.login_api.login_user(usr, pwd, code)
+    def test_login_success(self, case_name, case_desc, payload, expect_msg):
+        logger.info(f'用例名{case_name},用例描述{case_desc}')
+        res = self.login_api.login_user(payload)
         # res_json = res.json()
         print(f"res:{res.text}")
-        self.assertIn(ass, res.text)
+        self.assertIn(expect_msg, res.text)
 
 
 if __name__ == '__main__':

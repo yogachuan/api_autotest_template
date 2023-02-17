@@ -2,17 +2,15 @@
 import requests
 from common.logger import logger
 import os
-from common.read_data import read_data
+from common.rest_client import RestClient
 
 
 class GetSessionID:
     # 创建一个静态属性
     ses = None
     base_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    # print(base_path)
-    file_data = read_data.load_yaml(os.path.join(base_path, 'config', 'setting.yml'))['host']
-    api_root_url = file_data["api_root_url"]
-    api_content_type = file_data["api_content_type"]
+    api_root_url = RestClient.api_root_url
+    api_content_type = RestClient.api_content_type
 
     @classmethod
     def sessionMethod(cls, case='notLogin'):
@@ -21,7 +19,7 @@ class GetSessionID:
             # 生成会话之后调用登录方法
             if case == 'notLogin':
                 # 非登录类用例需先执行登录操作
-                GetSessionID.login()
+                cls.login()
         return cls.ses
 
     @classmethod

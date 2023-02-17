@@ -1,0 +1,27 @@
+customer_add_nor_data:
+  - case_name: "customer_add_nor001"
+    case_desc: "添加用户yujia1成功"
+    payload: {
+      customername: 'yujia1',
+      customerphone: '13292679673',
+      childsex: '男',
+      childdate: '1993-10-20',
+      creditkids: '0',
+      creditcloth: '0'
+    }
+    expect_msg: "success"
+
+  - case_name: "customer_add_nor002"
+    case_desc: "添加用户yujia1成功"
+    payload: {
+      customername: 'yujia2',
+      customerphone: '13292679674',
+      childsex: '男',
+      childdate: '1993-10-20',
+      creditkids: '0',
+      creditcloth: '0'
+    }
+    expect_msg: "success"
+
+customer_add_abn_data:
+

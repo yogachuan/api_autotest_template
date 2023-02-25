@@ -8,9 +8,7 @@ from common.rest_client import RestClient
 class GetSessionID:
     # 创建一个静态属性
     ses = None
-    base_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    api_root_url = RestClient.api_root_url
-    api_content_type = RestClient.api_content_type
+
 
     @classmethod
     def sessionMethod(cls, case='notLogin'):
@@ -25,16 +23,14 @@ class GetSessionID:
     @classmethod
     def login(cls):
         logger.info(f'非登录类测试用例需先进行登录操作')
-        url = cls.api_root_url + '/user/login'
-        head = {
-            'Content-Type': cls.api_content_type
-        }
+        url = RestClient.api_root_url + '/user/login'
+
         payload = {
             'username': 'admin',
             'password': '123456',
             'verifycode': '0000'
         }
-        res = cls.ses.post(url=url, headers=head, data=payload)
+        res = cls.ses.post(url=url, headers=RestClient.header, data=payload)
         # print(f'res:{res.text}')
         logger.info('登录用户为[admin]')
 

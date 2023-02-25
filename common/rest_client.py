@@ -11,6 +11,9 @@ class RestClient:
     file_data = read_data.load_yaml(os.path.join(base_path, 'config', 'setting.yml'))['host']
     api_root_url = file_data["api_root_url"]
     api_content_type = file_data["api_content_type"]
+    header = {
+        'Content-Type': api_content_type
+    }
 
     def __init__(self, session):
         self.ses = session

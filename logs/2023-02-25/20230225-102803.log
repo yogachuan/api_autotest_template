@@ -1,0 +1,90 @@
+2023-02-25 10:28:03,171 - INFO run.py [line:34]: RunCase执行用例--开始
+2023-02-25 10:28:03,188 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2023-02-25 10:28:03,189 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2023-02-25 10:28:03,200 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2023-02-25 10:28:03,201 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2023-02-25 10:28:03,269 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/data/customer_add.yml 文件......
+2023-02-25 10:28:03,272 - INFO read_data.py [line:27]: 读到数据 ==>>  {'customer_add_nor_data': [{'case_name': 'customer_add_nor001', 'case_desc': '添加用户yujia1成功', 'payload': {'customername': 'yujia1', 'customerphone': '13292679673', 'childsex': '男', 'childdate': '1993-10-20', 'creditkids': '0', 'creditcloth': '0'}, 'expect_msg': 'success'}, {'case_name': 'customer_add_nor002', 'case_desc': '添加用户yujia1成功', 'payload': {'customername': 'yujia2', 'customerphone': '13292679674', 'childsex': '男', 'childdate': '1993-10-20', 'creditkids': '0', 'creditcloth': '0'}, 'expect_msg': 'success'}], 'customer_add_abn_data': None} 
+2023-02-25 10:28:03,272 - INFO test_customer_add.py [line:16]: 新增会员成功的用例数据为[{'case_name': 'customer_add_nor001', 'case_desc': '添加用户yujia1成功', 'payload': {'customername': 'yujia1', 'customerphone': '13292679673', 'childsex': '男', 'childdate': '1993-10-20', 'creditkids': '0', 'creditcloth': '0'}, 'expect_msg': 'success'}, {'case_name': 'customer_add_nor002', 'case_desc': '添加用户yujia1成功', 'payload': {'customername': 'yujia2', 'customerphone': '13292679674', 'childsex': '男', 'childdate': '1993-10-20', 'creditkids': '0', 'creditcloth': '0'}, 'expect_msg': 'success'}]
+2023-02-25 10:28:03,273 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/data/login.yml 文件......
+2023-02-25 10:28:03,275 - INFO read_data.py [line:27]: 读到数据 ==>>  {'login_nor_data': [{'case_name': 'login_nor001', 'case_desc': '用户admin登录成功', 'payload': {'username': 'admin', 'password': '123456', 'verifycode': '0000'}, 'expect_msg': 'pass'}, {'case_name': 'login_nor002', 'case_desc': '用户lm登录成功', 'payload': {'username': 'lm', 'password': 'lmlm123', 'verifycode': '0000'}, 'expect_msg': 'pass'}], 'login_abn_data': [{'case_name': 'login_abn001', 'case_desc': '用户admin登录失败', 'payload': {'username': 'admin', 'password': 'lmlm123', 'verifycode': '0000'}, 'expect_msg': 'fail'}]} 
+2023-02-25 10:28:03,276 - INFO test_login.py [line:16]: 登录类测试用例数据为[{'case_name': 'login_nor001', 'case_desc': '用户admin登录成功', 'payload': {'username': 'admin', 'password': '123456', 'verifycode': '0000'}, 'expect_msg': 'pass'}, {'case_name': 'login_nor002', 'case_desc': '用户lm登录成功', 'payload': {'username': 'lm', 'password': 'lmlm123', 'verifycode': '0000'}, 'expect_msg': 'pass'}]
+2023-02-25 10:28:03,294 - INFO test_customer_add.py [line:20]: class setup content
+2023-02-25 10:28:03,294 - INFO test_customer_add.py [line:31]: function setup content
+2023-02-25 10:28:03,294 - INFO getSession.py [line:25]: 非登录类测试用例需先进行登录操作
+2023-02-25 10:28:03,337 - INFO getSession.py [line:35]: 登录用户为[admin]
+2023-02-25 10:28:03,337 - INFO test_customer_add.py [line:44]: 用例名customer_add_nor001,用例描述添加用户yujia1成功
+2023-02-25 10:28:03,337 - INFO rest_client.py [line:54]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/customer/add
+2023-02-25 10:28:03,337 - INFO rest_client.py [line:55]: 接口请求方式 ==>> post
+2023-02-25 10:28:03,338 - INFO rest_client.py [line:56]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2023-02-25 10:28:03,338 - INFO rest_client.py [line:57]: 接口请求 params 参数 ==>> null
+2023-02-25 10:28:03,338 - INFO rest_client.py [line:58]: 接口上传附件 files 参数 ==>> None
+2023-02-25 10:28:03,338 - INFO rest_client.py [line:59]: 接口请求体 data 参数 ==>> {
+    "customername": "yujia1",
+    "customerphone": "13292679673",
+    "childsex": "男",
+    "childdate": "1993-10-20",
+    "creditkids": "0",
+    "creditcloth": "0"
+}
+2023-02-25 10:28:03,361 - INFO customerApi.py [line:11]: 用户登录 ==>> 返回结果为:add-successful
+2023-02-25 10:28:03,361 - INFO test_customer_add.py [line:36]: function teardown content
+2023-02-25 10:28:03,361 - INFO test_customer_add.py [line:31]: function setup content
+2023-02-25 10:28:03,361 - INFO test_customer_add.py [line:44]: 用例名customer_add_nor002,用例描述添加用户yujia1成功
+2023-02-25 10:28:03,361 - INFO rest_client.py [line:54]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/customer/add
+2023-02-25 10:28:03,361 - INFO rest_client.py [line:55]: 接口请求方式 ==>> post
+2023-02-25 10:28:03,361 - INFO rest_client.py [line:56]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2023-02-25 10:28:03,361 - INFO rest_client.py [line:57]: 接口请求 params 参数 ==>> null
+2023-02-25 10:28:03,361 - INFO rest_client.py [line:58]: 接口上传附件 files 参数 ==>> None
+2023-02-25 10:28:03,361 - INFO rest_client.py [line:59]: 接口请求体 data 参数 ==>> {
+    "customername": "yujia2",
+    "customerphone": "13292679674",
+    "childsex": "男",
+    "childdate": "1993-10-20",
+    "creditkids": "0",
+    "creditcloth": "0"
+}
+2023-02-25 10:28:03,382 - INFO customerApi.py [line:11]: 用户登录 ==>> 返回结果为:add-successful
+2023-02-25 10:28:03,382 - INFO test_customer_add.py [line:36]: function teardown content
+2023-02-25 10:28:03,383 - INFO test_customer_add.py [line:24]: Class teardown content
+2023-02-25 10:28:03,511 - INFO database_operate.py [line:62]: 操作SQL语句成功[DELETE FROM customer WHERE customername = 'yujia1']
+2023-02-25 10:28:03,565 - INFO database_operate.py [line:62]: 操作SQL语句成功[DELETE FROM customer WHERE customername = 'yujia2']
+2023-02-25 10:28:03,566 - INFO test_login.py [line:20]: class setup content
+2023-02-25 10:28:03,566 - INFO test_login.py [line:27]: function setup content
+2023-02-25 10:28:03,566 - INFO test_login.py [line:37]: 用例名login_nor001,用例描述用户admin登录成功
+2023-02-25 10:28:03,566 - INFO rest_client.py [line:54]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/user/login
+2023-02-25 10:28:03,566 - INFO rest_client.py [line:55]: 接口请求方式 ==>> post
+2023-02-25 10:28:03,566 - INFO rest_client.py [line:56]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2023-02-25 10:28:03,566 - INFO rest_client.py [line:57]: 接口请求 params 参数 ==>> null
+2023-02-25 10:28:03,566 - INFO rest_client.py [line:58]: 接口上传附件 files 参数 ==>> None
+2023-02-25 10:28:03,566 - INFO rest_client.py [line:59]: 接口请求体 data 参数 ==>> {
+    "username": "admin",
+    "password": "123456",
+    "verifycode": "0000"
+}
+2023-02-25 10:28:03,586 - INFO loginApi.py [line:11]: 用户登录 ==>> 返回结果为:login-pass
+2023-02-25 10:28:03,586 - INFO test_login.py [line:32]: function teardown content
+2023-02-25 10:28:03,586 - INFO test_login.py [line:27]: function setup content
+2023-02-25 10:28:03,586 - INFO test_login.py [line:37]: 用例名login_nor002,用例描述用户lm登录成功
+2023-02-25 10:28:03,586 - INFO rest_client.py [line:54]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/user/login
+2023-02-25 10:28:03,587 - INFO rest_client.py [line:55]: 接口请求方式 ==>> post
+2023-02-25 10:28:03,587 - INFO rest_client.py [line:56]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2023-02-25 10:28:03,587 - INFO rest_client.py [line:57]: 接口请求 params 参数 ==>> null
+2023-02-25 10:28:03,587 - INFO rest_client.py [line:58]: 接口上传附件 files 参数 ==>> None
+2023-02-25 10:28:03,587 - INFO rest_client.py [line:59]: 接口请求体 data 参数 ==>> {
+    "username": "lm",
+    "password": "lmlm123",
+    "verifycode": "0000"
+}
+2023-02-25 10:28:03,606 - INFO loginApi.py [line:11]: 用户登录 ==>> 返回结果为:login-pass
+2023-02-25 10:28:03,606 - INFO test_login.py [line:32]: function teardown content
+2023-02-25 10:28:03,606 - INFO test_login.py [line:24]: Class teardown content
+2023-02-25 10:28:03,618 - INFO run.py [line:47]: RunCase执行用例--结束

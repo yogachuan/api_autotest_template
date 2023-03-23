@@ -3,7 +3,6 @@ import yaml
 import json
 from configparser import ConfigParser
 from common.logger import logger
-import xlrd
 
 
 class MyConfigParser(ConfigParser):
@@ -42,22 +41,6 @@ class ReadFileData:
         config_parser.read(file_path, encoding="UTF-8")
         data = dict(config_parser._sections)
         print("读到数据 ==>>  {} ".format(data))
-        return data
-
-    @staticmethod
-    def load_excel(file_path):
-        file = xlrd.open_workbook(file_path)
-        sheet = file.sheet_by_index(0)
-        data = []
-        for row in range(1, sheet.nrows):
-            lines = []
-            for col in range(sheet.ncols):
-                value = sheet.cell(row, col).value
-                if not isinstance(value, str):
-                    # 单元格内容不是字符串类型
-                    value = str(int(value))
-                lines.append(value)
-            data.append(lines)
         return data
 
 

@@ -1,0 +1,49 @@
+2023-02-17 20:59:20,254 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2023-02-17 20:59:20,255 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2023-02-17 20:59:20,380 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2023-02-17 20:59:20,381 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2023-02-17 20:59:20,440 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/data/customer_add.yml 文件......
+2023-02-17 20:59:20,443 - INFO read_data.py [line:27]: 读到数据 ==>>  {'customer_add_nor_data': [{'case_name': 'customer_add_nor001', 'case_desc': '添加用户yujia1成功', 'payload': {'customername': 'yujia1', 'customerphone': '13292679673', 'childsex': '男', 'childdate': '1993-10-20', 'creditkids': '0', 'creditcloth': '0'}, 'expect_msg': 'success'}, {'case_name': 'customer_add_nor002', 'case_desc': '添加用户yujia1成功', 'payload': {'customername': 'yujia2', 'customerphone': '13292679674', 'childsex': '男', 'childdate': '1993-10-20', 'creditkids': '0', 'creditcloth': '0'}, 'expect_msg': 'success'}], 'customer_add_abn_data': None} 
+2023-02-17 20:59:20,443 - INFO test_customer_add.py [line:16]: 新增会员成功的用例数据为[{'case_name': 'customer_add_nor001', 'case_desc': '添加用户yujia1成功', 'payload': {'customername': 'yujia1', 'customerphone': '13292679673', 'childsex': '男', 'childdate': '1993-10-20', 'creditkids': '0', 'creditcloth': '0'}, 'expect_msg': 'success'}, {'case_name': 'customer_add_nor002', 'case_desc': '添加用户yujia1成功', 'payload': {'customername': 'yujia2', 'customerphone': '13292679674', 'childsex': '男', 'childdate': '1993-10-20', 'creditkids': '0', 'creditcloth': '0'}, 'expect_msg': 'success'}]
+2023-02-17 20:59:20,446 - INFO test_customer_add.py [line:20]: class setup content
+2023-02-17 20:59:20,447 - INFO test_customer_add.py [line:31]: function setup content
+2023-02-17 20:59:20,447 - INFO test_customer_add.py [line:44]: 用例名customer_add_nor001,用例描述添加用户yujia1成功
+2023-02-17 20:59:20,447 - INFO rest_client.py [line:51]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/customer/add
+2023-02-17 20:59:20,447 - INFO rest_client.py [line:52]: 接口请求方式 ==>> post
+2023-02-17 20:59:20,447 - INFO rest_client.py [line:53]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2023-02-17 20:59:20,447 - INFO rest_client.py [line:54]: 接口请求 params 参数 ==>> null
+2023-02-17 20:59:20,447 - INFO rest_client.py [line:55]: 接口上传附件 files 参数 ==>> None
+2023-02-17 20:59:20,447 - INFO rest_client.py [line:56]: 接口请求体 data 参数 ==>> {
+    "customername": "yujia1",
+    "customerphone": "13292679673",
+    "childsex": "男",
+    "childdate": "1993-10-20",
+    "creditkids": "0",
+    "creditcloth": "0"
+}
+2023-02-17 20:59:20,700 - INFO customerApi.py [line:26]: 用户登录 ==>> 返回结果为:<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Error</h1></center><hr><center><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>
+2023-02-17 20:59:20,700 - INFO test_customer_add.py [line:36]: function teardown content
+2023-02-17 20:59:20,757 - INFO test_customer_add.py [line:31]: function setup content
+2023-02-17 20:59:20,757 - INFO test_customer_add.py [line:44]: 用例名customer_add_nor002,用例描述添加用户yujia1成功
+2023-02-17 20:59:20,757 - INFO rest_client.py [line:51]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/customer/add
+2023-02-17 20:59:20,757 - INFO rest_client.py [line:52]: 接口请求方式 ==>> post
+2023-02-17 20:59:20,757 - INFO rest_client.py [line:53]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2023-02-17 20:59:20,757 - INFO rest_client.py [line:54]: 接口请求 params 参数 ==>> null
+2023-02-17 20:59:20,757 - INFO rest_client.py [line:55]: 接口上传附件 files 参数 ==>> None
+2023-02-17 20:59:20,757 - INFO rest_client.py [line:56]: 接口请求体 data 参数 ==>> {
+    "customername": "yujia2",
+    "customerphone": "13292679674",
+    "childsex": "男",
+    "childdate": "1993-10-20",
+    "creditkids": "0",
+    "creditcloth": "0"
+}
+2023-02-17 20:59:20,800 - INFO customerApi.py [line:26]: 用户登录 ==>> 返回结果为:<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Error</h1></center><hr><center><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>
+2023-02-17 20:59:20,800 - INFO test_customer_add.py [line:36]: function teardown content
+2023-02-17 20:59:20,804 - INFO test_customer_add.py [line:24]: Class teardown content
+2023-02-17 20:59:20,862 - INFO database_operate.py [line:62]: 操作SQL语句成功[DELETE FROM customer WHERE customername = 'yujia1']
+2023-02-17 20:59:20,906 - INFO database_operate.py [line:62]: 操作SQL语句成功[DELETE FROM customer WHERE customername = 'yujia2']

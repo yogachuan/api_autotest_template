@@ -1,0 +1,27 @@
+2023-02-17 20:00:52,966 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2023-02-17 20:00:52,967 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2023-02-17 20:00:53,029 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/config/setting.yml 文件......
+2023-02-17 20:00:53,030 - INFO read_data.py [line:27]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2023-02-17 20:00:53,030 - INFO read_data.py [line:24]: 加载 /Users/yoga/Desktop/练手/API自动化框架模板/data/login.yml 文件......
+2023-02-17 20:00:53,031 - INFO read_data.py [line:27]: 读到数据 ==>>  {'login_nor_data': [{'case_name': 'login_nor001', 'case_desc': '用户admin登录成功', 'payload': {'username': 'admin', 'password': '123456', 'verifycode': '0000'}, 'expect_msg': 'pass'}, {'case_name': 'login_nor002', 'payload': {'username': 'lm', 'password': 'lmlm123', 'verifycode': '0000'}, 'expect_msg': 'pass'}], 'login_abn_data': [{'case_name': 'login_abn001', 'case_desc': '用户admin登录失败', 'loginName': 'admin', 'password': '12345', 'verifycode': '0000', 'expect_msg': 'fail'}]} 
+2023-02-17 20:00:53,032 - INFO test_login.py [line:16]: 登录类测试用例数据为[{'case_name': 'login_nor001', 'case_desc': '用户admin登录成功', 'payload': {'username': 'admin', 'password': '123456', 'verifycode': '0000'}, 'expect_msg': 'pass'}, {'case_name': 'login_nor002', 'payload': {'username': 'lm', 'password': 'lmlm123', 'verifycode': '0000'}, 'expect_msg': 'pass'}]
+2023-02-17 20:00:53,033 - INFO test_login.py [line:20]: class setup content
+2023-02-17 20:00:53,034 - INFO test_login.py [line:27]: function setup content
+2023-02-17 20:00:53,034 - INFO test_login.py [line:37]: 用例名login_nor001,用例描述用户admin登录成功
+2023-02-17 20:00:53,034 - INFO rest_client.py [line:51]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/user/login
+2023-02-17 20:00:53,034 - INFO rest_client.py [line:52]: 接口请求方式 ==>> post
+2023-02-17 20:00:53,034 - INFO rest_client.py [line:53]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2023-02-17 20:00:53,034 - INFO rest_client.py [line:54]: 接口请求 params 参数 ==>> null
+2023-02-17 20:00:53,034 - INFO rest_client.py [line:55]: 接口上传附件 files 参数 ==>> None
+2023-02-17 20:00:53,034 - INFO rest_client.py [line:56]: 接口请求体 data 参数 ==>> {
+    "username": "admin",
+    "password": "123456",
+    "verifycode": "0000"
+}
+2023-02-17 20:00:53,169 - INFO loginApi.py [line:23]: 用户登录 ==>> 返回结果为:login-pass
+2023-02-17 20:00:53,169 - INFO test_login.py [line:32]: function teardown content
+2023-02-17 20:00:53,171 - INFO test_login.py [line:27]: function setup content
+2023-02-17 20:00:53,171 - INFO test_login.py [line:32]: function teardown content
+2023-02-17 20:00:53,212 - INFO test_login.py [line:24]: Class teardown content

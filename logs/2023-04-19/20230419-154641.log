@@ -1,0 +1,39 @@
+2023-04-19 15:46:41,756 - INFO read_data.py [line:23]: 加载 /Users/yoga/学习/练手/API自动化框架模板/config/setting.yml 文件......
+2023-04-19 15:46:41,758 - INFO read_data.py [line:26]: 读到数据 ==>>  {'host': {'api_root_url': 'http://43.138.88.28:8080/woniusales', 'api_content_type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'browserType': {'browser_type': 'chrome'}, 'mysql': {'MYSQL_HOST': '43.138.88.28', 'MYSQL_PORT': '12345', 'MYSQL_USER': 'root', 'MYSQL_PASSWD': '123456', 'MYSQL_DB': 'woniusale'}} 
+2023-04-19 15:46:41,841 - INFO read_data.py [line:23]: 加载 /Users/yoga/学习/练手/API自动化框架模板/data/login.yml 文件......
+2023-04-19 15:46:41,843 - INFO read_data.py [line:26]: 读到数据 ==>>  {'login_nor_data': [{'case_name': 'login_nor001', 'case_desc': '用户admin登录成功', 'payload': {'username': 'admin', 'password': '123456', 'verifycode': '0000'}, 'expect_msg': 'pass'}, {'case_name': 'login_nor002', 'case_desc': '用户lm登录成功', 'payload': {'username': 'lm', 'password': 'lmlm123', 'verifycode': '0000'}, 'expect_msg': 'pass'}], 'login_abn_data': [{'case_name': 'login_abn001', 'case_desc': '用户admin登录失败', 'payload': {'username': 'admin', 'password': 'lmlm123', 'verifycode': '0000'}, 'expect_msg': 'fail'}]} 
+2023-04-19 15:46:41,843 - INFO test_login.py [line:16]: 登录类测试用例数据为[{'case_name': 'login_nor001', 'case_desc': '用户admin登录成功', 'payload': {'username': 'admin', 'password': '123456', 'verifycode': '0000'}, 'expect_msg': 'pass'}, {'case_name': 'login_nor002', 'case_desc': '用户lm登录成功', 'payload': {'username': 'lm', 'password': 'lmlm123', 'verifycode': '0000'}, 'expect_msg': 'pass'}]
+2023-04-19 15:46:41,843 - INFO test_login.py [line:20]: class setup content
+2023-04-19 15:46:41,844 - INFO test_login.py [line:27]: function setup content
+2023-04-19 15:46:41,844 - INFO test_login.py [line:37]: 用例名login_nor001,用例描述用户admin登录成功
+2023-04-19 15:46:41,844 - INFO rest_client.py [line:54]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/user/login
+2023-04-19 15:46:41,844 - INFO rest_client.py [line:55]: 接口请求方式 ==>> post
+2023-04-19 15:46:41,844 - INFO rest_client.py [line:56]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2023-04-19 15:46:41,844 - INFO rest_client.py [line:57]: 接口请求 params 参数 ==>> null
+2023-04-19 15:46:41,844 - INFO rest_client.py [line:58]: 接口上传附件 files 参数 ==>> None
+2023-04-19 15:46:41,844 - INFO rest_client.py [line:59]: 接口请求体 data 参数 ==>> {
+    "username": "admin",
+    "password": "123456",
+    "verifycode": "0000"
+}
+2023-04-19 15:46:41,957 - INFO loginApi.py [line:11]: 用户登录 ==>> 返回结果为:login-pass
+2023-04-19 15:46:41,958 - INFO test_login.py [line:32]: function teardown content
+2023-04-19 15:46:41,958 - INFO test_login.py [line:27]: function setup content
+2023-04-19 15:46:41,958 - INFO test_login.py [line:37]: 用例名login_nor002,用例描述用户lm登录成功
+2023-04-19 15:46:41,958 - INFO rest_client.py [line:54]: 接口请求地址 ==>> http://43.138.88.28:8080/woniusales/user/login
+2023-04-19 15:46:41,958 - INFO rest_client.py [line:55]: 接口请求方式 ==>> post
+2023-04-19 15:46:41,958 - INFO rest_client.py [line:56]: 接口请求头 ==>> {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2023-04-19 15:46:41,958 - INFO rest_client.py [line:57]: 接口请求 params 参数 ==>> null
+2023-04-19 15:46:41,958 - INFO rest_client.py [line:58]: 接口上传附件 files 参数 ==>> None
+2023-04-19 15:46:41,958 - INFO rest_client.py [line:59]: 接口请求体 data 参数 ==>> {
+    "username": "lm",
+    "password": "lmlm123",
+    "verifycode": "0000"
+}
+2023-04-19 15:46:42,003 - INFO loginApi.py [line:11]: 用户登录 ==>> 返回结果为:login-pass
+2023-04-19 15:46:42,004 - INFO test_login.py [line:32]: function teardown content
+2023-04-19 15:46:42,004 - INFO test_login.py [line:24]: Class teardown content

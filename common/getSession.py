@@ -9,7 +9,6 @@ class GetSessionID:
     # 创建一个静态属性
     ses = None
 
-
     @classmethod
     def sessionMethod(cls, case='notLogin'):
         if cls.ses is None:

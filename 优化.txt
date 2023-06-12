@@ -1,0 +1,4 @@
+Api自动化
+1、做成单例模式，getSession类，并判断是否需要登录。restclient实例化需传入session，所有的requests.post改成session.post，get同理。其他需要登录才能操作的接口就无需再传入cookie也能操作
+2、lib层测试接口以api开头，内部方法及变量以__开头无需暴露
+3、test层test函数，以字典形式传参，将接口所有参数装进该字典并传入测试接口中

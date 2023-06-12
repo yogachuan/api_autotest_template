@@ -10,6 +10,7 @@ from common.logger import logger
 # 将项目根目录加到系统路径中，避免jenkins执行python时，common模块识别不出的问题
 rootpath = os.path.dirname(os.path.realpath(__file__))
 syspath = sys.path
+
 print("syspath is:{}".format(syspath))
 sys.path.append(rootpath)
 print("syspath is:{}".format(sys.path))
